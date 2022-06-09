@@ -1,6 +1,7 @@
 package javaco;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Curso {
@@ -23,6 +24,9 @@ public class Curso {
     }
 
     public List<Aula> getAulas() {
-        return aulas;
+        return Collections.unmodifiableList(aulas);
+    }
+    public void adicionarAula(Aula aula){
+        this.aulas.add(aula);
     }
 }

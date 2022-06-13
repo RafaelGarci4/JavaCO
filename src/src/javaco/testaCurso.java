@@ -14,7 +14,7 @@ public class testaCurso {
         javaColecoes.adicionarAula(new Aula("Criando uma aula",20));
 
         javaColecoes.adicionarAula(new Aula("Modelando colecoes",22));
-
+        
         System.out.println(javaColecoes.getAulas());
     }
 }
